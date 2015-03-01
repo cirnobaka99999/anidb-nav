@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        AniDB MyList Navigation
-// @version     1.3.40
+// @version     1.3.41
 // @namespace   http://vk.com/seiya_loveless?#AniDB_MyList_Navigation.user.js
 // @description New navigation for AniDB.net
 // @include     http://anidb.net/perl-bin/animedb.pl?*show=mylist*
@@ -60,13 +60,6 @@ if(liststate_stalled===0){var liststate_stalled_url='';}else{var liststate_stall
 if(liststate_dropped===0){var liststate_dropped_url='';}else{var liststate_dropped_url='&liststate.dropped=1';}
 if(liststate_collecting===0){var liststate_collecting_url='';}else{var liststate_collecting_url='&liststate.collecting=1';}
 if(liststate_unknown===0){var liststate_unknown_url='';}else{var liststate_unknown_url='&liststate.unknown=1';}
-
-/* check vars */
-//alert(user_id);
-//alert(char_id);
-//alert(page_id);
-//alert(page_back_id);
-//alert(page_next_id);
 
 /* list states navigation */
 $('ul.g_list').append('<li><span><a href="'+list_url+user_url+'">All Anime</a></span></li>');
