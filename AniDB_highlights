@@ -1,0 +1,30 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("anidb.net") {
+	#layout-main div.animelist_all table tr.all_watched,
+	#layout-main div.producer_all table tr.all_watched,
+	#layout-main div.latest2_all table tr.all_watched,
+	#layout-main div.latest2_all table tr td.all_watched,
+	#layout-main div.character_all div.tabbed_pane_main table tr.all_watched,
+	#layout-main div.creator_all div.tabbed_pane_main table tr.all_watched,
+	#layout-main div.anime_all div.tabbed_pane_main table tr.all_watched,
+	#layout-main div.mylist_all table tr.all_watched,
+	#layout-main div.group_released table tr.all_watched,
+	#layout-main div.schedule_all table tr.all_watched,
+	#layout-main div.lexicon_all table tr.all_watched
+	{background-color: #A7DDA7;}
+	#layout-main div.animelist_all table tr.g_odd.all_watched,
+	#layout-main div.producer_all table tr.g_odd.all_watched,
+	#layout-main div.latest2_all table tr.g_odd.all_watched,
+	#layout-main div.latest2_all table tr.g_odd td.all_watched,
+	#layout-main div.character_all div.tabbed_pane_main table tr.g_odd.all_watched,
+	#layout-main div.creator_all div.tabbed_pane_main table tr.g_odd.all_watched,
+	#layout-main div.anime_all div.tabbed_pane_main table tr.g_odd.all_watched,
+	#layout-main div.mylist_all table tr.g_odd.all_watched,
+	#layout-main div.group_released table tr.g_odd.all_watched,
+	#layout-main div.schedule_all table tr.g_odd.all_watched,
+	#layout-main div.lexicon_all table tr.g_odd.all_watched
+	{background-color: #A7DDA7;}
+	table.eplist tr:hover td
+	{background-color: #99c;}
+}
