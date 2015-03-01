@@ -10,8 +10,8 @@
 // @grant       none
 // @icon        http://static.anidb.net/favicon.ico
 // @homepage    https://github.com/seiya-dev/anidb-nav
-// @updateURL   
-// @downloadURL 
+// @updateURL   https://github.com/seiya-dev/anidb-nav/raw/master/AniDB_MyList_Navigation.user.js
+// @downloadURL https://github.com/seiya-dev/anidb-nav/raw/master/AniDB_MyList_Navigation.user.js
 // ==/UserScript==
 
 // removing old navigation
