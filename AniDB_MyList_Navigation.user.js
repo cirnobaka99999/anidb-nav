@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name        AniDB MyList Navigation
-// @version     1.3.42
-// @namespace   http://vk.com/seiya_loveless?#AniDB_MyList_Navigation.user.js
+// @version     1.3.43
+// @namespace   https://github.com/seiya-dev/anidb-nav
 // @description New navigation for AniDB.net
-// @include     http://anidb.net/perl-bin/animedb.pl?*show=mylist*
-// @exclude     http://anidb.net/perl-bin/animedb.pl?*show=mylist*do=edit.state*
-// @exclude     http://anidb.net/perl-bin/animedb.pl?*show=mylist*do=cmp*
-// @exclude     http://anidb.net/perl-bin/animedb.pl?*show=mylist*do=mch*
+// @include     *://anidb.net/perl-bin/animedb.pl?*show=mylist*
+// @exclude     *://anidb.net/perl-bin/animedb.pl?*show=mylist*do=edit.state*
+// @exclude     *://anidb.net/perl-bin/animedb.pl?*show=mylist*do=cmp*
+// @exclude     *://anidb.net/perl-bin/animedb.pl?*show=mylist*do=mch*
 // @grant       none
-// @icon        http://static.anidb.net/favicon.ico
+// @icon        https://static.anidb.net/favicon.ico
 // @homepage    https://github.com/seiya-dev/anidb-nav
 // @updateURL   https://seiya-dev.github.io/anidb-nav/AniDB_MyList_Navigation.user.js
 // @downloadURL https://seiya-dev.github.io/anidb-nav/AniDB_MyList_Navigation.user.js
@@ -23,7 +23,7 @@ $('form ul.g_list').remove();
 $('form table.animelist tr:last.action').remove();
 
 // main url
-var list_url ='http://anidb.net/perl-bin/animedb.pl?show=mylist'; // &uid=345411&char=0&page=0
+var list_url ='https://anidb.net/perl-bin/animedb.pl?show=mylist'; // &uid=345411&char=0&page=0
 
 // get url vars
 var user_id=parseInt($.getUrlParameter('uid'));
