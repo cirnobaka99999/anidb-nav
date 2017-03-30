@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        AniDB MyList Navigation
-// @version     1.3.41
+// @version     1.3.42
 // @namespace   http://vk.com/seiya_loveless?#AniDB_MyList_Navigation.user.js
 // @description New navigation for AniDB.net
 // @include     http://anidb.net/perl-bin/animedb.pl?*show=mylist*
@@ -10,8 +10,8 @@
 // @grant       none
 // @icon        http://static.anidb.net/favicon.ico
 // @homepage    https://github.com/seiya-dev/anidb-nav
-// @updateURL   https://github.com/seiya-dev/anidb-nav/raw/master/AniDB_MyList_Navigation.user.js
-// @downloadURL https://github.com/seiya-dev/anidb-nav/raw/master/AniDB_MyList_Navigation.user.js
+// @updateURL   https://seiya-dev.github.io/anidb-nav/AniDB_MyList_Navigation.user.js
+// @downloadURL https://seiya-dev.github.io/anidb-nav/AniDB_MyList_Navigation.user.js
 // ==/UserScript==
 
 // removing old navigation
@@ -23,7 +23,7 @@ $('form ul.g_list').remove();
 $('form table.animelist tr:last.action').remove();
 
 // main url
-var list_url ='http://anidb.net/perl-bin/animedb.pl?show=mylist'; //&uid=345411&char=0&page=0
+var list_url ='http://anidb.net/perl-bin/animedb.pl?show=mylist'; // &uid=345411&char=0&page=0
 
 // get url vars
 var user_id=parseInt($.getUrlParameter('uid'));
@@ -31,12 +31,12 @@ var char_id=$.getUrlParameter('char');
 var page_id=parseInt($.getUrlParameter('page'));
 
 // get liststates
-var liststate_watching=parseInt($.getUrlParameter('liststate.watching')); //Currently Watching
-var liststate_completed=parseInt($.getUrlParameter('liststate.completed')); //Completed
-var liststate_stalled=parseInt($.getUrlParameter('liststate.stalled')); //On Hold
-var liststate_dropped=parseInt($.getUrlParameter('liststate.dropped')); //Dropped
-var liststate_collecting=parseInt($.getUrlParameter('liststate.collecting')); //Plan to Watch
-var liststate_unknown=parseInt($.getUrlParameter('liststate.unknown')); //Not Set
+var liststate_watching=parseInt($.getUrlParameter('liststate.watching')); // Currently Watching
+var liststate_completed=parseInt($.getUrlParameter('liststate.completed')); // Completed
+var liststate_stalled=parseInt($.getUrlParameter('liststate.stalled')); // On Hold
+var liststate_dropped=parseInt($.getUrlParameter('liststate.dropped')); // Dropped
+var liststate_collecting=parseInt($.getUrlParameter('liststate.collecting')); // Plan to Watch
+var liststate_unknown=parseInt($.getUrlParameter('liststate.unknown')); // Not Set
 
 // check active vars
 if(isNaN(user_id)){var user_url='';}else{var user_url='&uid='+user_id;}
